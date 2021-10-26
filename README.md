@@ -1,3 +1,3 @@
 # FSM_Control
-Diagram.net to FSM drawing
-Hei
+FSM drawing of state machine. 
+Can be edited with https://app.diagrams.net/
