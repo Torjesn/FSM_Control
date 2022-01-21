@@ -1,0 +1,28 @@
+README part:
+Diagram is generated om https://sequencediagram.org/
+Paste the code below in there.
+
+--------
+
+CODE:
+title Sequence diagram Controlsys
+
+participant HW
+participant Main
+participant FSM
+
+activate Main
+Main->FSM: Tilstands sjekk
+
+activate FSM
+FSM->HW: Sensor sjekk
+activate HW
+HW-->FSM: Response
+deactivate HW
+FSM-->Main: Response
+deactivate FSM
+
+Main->HW: Switching
+activate HW
+HW-->Main: Response
+deactivate HW
